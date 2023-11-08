@@ -12,12 +12,15 @@
     "framer-motion": "^10.16.4",
     "next": "14.0.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "styled-components": "^6.1.1",
+    "three": "^0.158.0"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/three": "^0.158.2",
     "eslint": "^8",
     "eslint-config-next": "14.0.1",
     "typescript": "^5"
