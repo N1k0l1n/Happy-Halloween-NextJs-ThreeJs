@@ -47,7 +47,7 @@ const LittleImage: React.FC = () => {
       container.appendChild(renderer.domElement);
       setRenderer(renderer);
 
-      const scale = scH * 0.08 + 4;
+      const scale = scH * 0.0008 + 1;
       const camera = new THREE.OrthographicCamera(-scale, scale, scale, -scale / 2, 0.01, 50000);
       camera.position.copy(initialCameraPosition);
       camera.lookAt(target);
@@ -80,7 +80,7 @@ const LittleImage: React.FC = () => {
           const p = initialCameraPosition;
           const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20;
 
-          camera.position.y = 10;
+          camera.position.y = 0;
           camera.position.x = p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed);
           camera.position.z = p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed);
           camera.lookAt(target);
