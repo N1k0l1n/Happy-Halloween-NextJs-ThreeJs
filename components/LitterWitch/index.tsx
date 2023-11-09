@@ -110,7 +110,7 @@ const LittleImage: React.FC = () => {
     <Container>
       <Header>
         <h1>
-          🎃 <span>HAPPY HALLOWEEN 2021</span> 🎃
+          🎃 <span>HAPPY HALLOWEEN</span> 🎃
         </h1>
       </Header>
       <BodyModel ref={refBody}>{loading && <p>loading...</p>}</BodyModel>
