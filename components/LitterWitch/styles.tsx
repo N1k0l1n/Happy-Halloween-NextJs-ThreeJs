@@ -1,23 +1,23 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Container = styled.div`
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   color: #fff;
   text-align: center;
-  background-image: url(./bg.jpg);
+  background-image: url(./b1.jpg);
   background-position: center;
   background-size: cover;
   overflow: hidden;
 `;
 
-
 const Header = styled.div`
   position: absolute;
-  top: 5rem;
+  top: 4rem;
   left: 0;
   z-index: 9;
+
   width: 100%;
   font-size: 4rem;
 
@@ -28,7 +28,6 @@ const Header = styled.div`
   h1 {
     font-size: inherit;
   }
-
   span {
     background: linear-gradient(orange, red);
     -webkit-background-clip: text;
@@ -39,8 +38,10 @@ const Header = styled.div`
 const BodyModel = styled.div`
   position: absolute;
   inset: 0;
-  width: 100%;
+
   height: 100%;
+  width: 100%;
+
   cursor: pointer;
   background-color: transparent;
 `;
@@ -49,6 +50,7 @@ const Footer = styled.div`
   position: absolute;
   bottom: 5rem;
   z-index: 9;
+
   width: 100%;
 `;
 

@@ -4,6 +4,8 @@ import {  AnimatePresence } from "framer-motion";
 
 export const PageWrapper = ({ children }: any) => (
   <>
-    <AnimatePresence>{children}</AnimatePresence>
+    <AnimatePresence mode='wait' initial={true}>
+      {children}
+    </AnimatePresence>
   </>
 );
